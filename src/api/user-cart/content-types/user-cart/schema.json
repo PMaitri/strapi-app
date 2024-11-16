@@ -24,14 +24,14 @@
       "target": "plugin::users-permissions.user",
       "mappedBy": "user_cart"
     },
+    "userId": {
+      "type": "integer"
+    },
     "products": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::product.product",
       "mappedBy": "user_carts"
-    },
-    "userId": {
-      "type": "integer"
     }
   }
 }
