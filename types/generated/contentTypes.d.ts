@@ -466,11 +466,11 @@ export interface ApiProductProduct extends Schema.CollectionType {
       'admin::user'
     > &
       Attribute.Private;
-    description: Attribute.String;
+    description: Attribute.Text;
     images: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
     itemQuantityType: Attribute.String;
     mrp: Attribute.BigInteger;
-    name: Attribute.String;
+    name: Attribute.Text;
     publishedAt: Attribute.DateTime;
     sellingPrice: Attribute.BigInteger;
     slug: Attribute.UID;
